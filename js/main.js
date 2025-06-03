@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function sendToAPI(message) {
-    fetch("http://44.203.31.38/A-exm-u3-api/endpoints/chat.php", {
+    fetch("http://100.27.15.132/A-exm-u3-api/endpoints/chat.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function saveStatusToDB(status) {
     const username = document.getElementById("username").value || "Anónimo";
 
-    fetch("http://44.203.31.38/A-exm-iot-api/controllers/AddIotDevice.php", {
+    fetch("http://100.27.15.132/A-exm-iot-api/controllers/AddIotDevice.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
